@@ -18,4 +18,13 @@ public class SUV extends Voiture {
     public void setEstElectrique(boolean estElectrique) {
         this.estElectrique = estElectrique;
     }
+
+    /** Dans cette méthode toString() de la classe dérivée de Voiture on affiche tout d'abord les attributs relatifs
+     *  à la superclasse ensuite ceux de la classe dérivée.
+     */
+    @Override
+    public String toString() {
+        return super.toString() + " -- SUV [estElectrique=" + estElectrique + "]";
+    }
+    
 }

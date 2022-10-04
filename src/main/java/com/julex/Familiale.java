@@ -23,5 +23,15 @@ public class Familiale extends Voiture {
 
     public void setContientTelevision(boolean contientTelevision) {
         this.contientTelevision = contientTelevision;
-    } 
+    }
+    
+    /** Dans cette méthode toString() de la classe dérivée de Voiture on affiche tout d'abord les attributs relatifs
+     *  à la superclasse ensuite ceux de la classe dérivée.
+     */
+    @Override
+    public String toString() {
+        return super.toString() + " -- Familiale [contientTelevision=" + contientTelevision + "]";
+    }
+
+    
 }

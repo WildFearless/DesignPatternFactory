@@ -17,5 +17,14 @@ public class Sport extends Voiture {
 
     public void setVitesseMax(int vitesseMax) {
         this.vitesseMax = vitesseMax;
-    }    
+    }
+
+    /** Dans cette méthode toString() de la classe dérivée de Voiture on affiche tout d'abord les attributs relatifs
+     *  à la superclasse ensuite ceux de la classe dérivée.
+     */
+    @Override
+    public String toString() {
+        return super.toString() + " -- Sport [vitesseMax=" + vitesseMax + "]";
+    }
+
 }
