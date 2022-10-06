@@ -180,6 +180,7 @@ public class ConnectionFactory {
 * Nous permet de cacher l'implémentation ou la création des objets à l'utilisateur
 * Nous permet de changer notre application plus facilement en raison du couplage faible qu'il favorise
 ![problem1-fr](https://user-images.githubusercontent.com/58618673/194399540-1eda8b71-51af-4548-8588-7b66537e6ef8.png)
+---
 ![solution3-fr](https://user-images.githubusercontent.com/58618673/194400995-347c884d-bd8c-43e7-9703-e3239b7470fc.png)
 * Il respecte le principe de responsabilité unique et évite les immenses fonctions monolithiques
 
