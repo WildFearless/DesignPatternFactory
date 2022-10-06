@@ -10,7 +10,7 @@ d'abord un exemple où le patron n'est pas appliquée et l'amélioration du code
 Imaginons une application qui a besoin de convertir un objet Song en sa représentation en String selon un format spécifique
 (par exemple JSON ou XML). 
 
-```
+```python
 # In serializer_demo.py
 
 import json
@@ -53,7 +53,7 @@ de ce principe est spécialement important puisque ce code sera difficilement ex
 devons ajouter des nouveaux formats autres que XML ou JSON, cela alourdira la méthode, si nous modifions l'objet Song nous devrons également
 modifier chacun des implémentations donc il serait plus judicieux d'extraire les implémentations de la méthode `serialize(self, song, format)`.
 
-```
+```python
 class SongSerializer:
     def serialize(self, song, format):
         serializer = get_serializer(format)
@@ -96,7 +96,7 @@ n'a pas à le construire lui même ou devoir spécifier d'autres paramètres que
 
 Voici un autre exemple en PHP qui illustre le principe plus simplement et qui ressemble à notre implémentation en java dans ce repository :
 
-```
+```php
 /* Factory and car interfaces */
 
 interface CarFactory
