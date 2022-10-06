@@ -135,7 +135,7 @@ print $car->getType();
 ```
 
 
-## Exemples d'utilisation du pattern dans des 
+## Autres exemples d'utilisation du pattern Factory
 
 * La fonction document.createElement(typeOfElement) du DOM HTML5 fait appel à une factory pour renvoyer les éléments au code appelant
 * Les ConnectionFactory pour la connexion à une base de donnée
@@ -147,7 +147,7 @@ print $car->getType();
 * Il respecte le principe de responsabilité unique et évite les immenses fonctions monolithiques
 
 
-## Les faiblesses
+## Les faiblesses du design pattern Factory
 
 * Peut rendre le code un peu plus difficile à comprendre car on fait appel à un plus haut niveau d'abstraction
 * Souvent utilisé de façon incorrecte sans réflexion de comment le programme sera appelé à évoluer
