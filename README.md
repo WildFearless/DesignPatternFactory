@@ -43,7 +43,7 @@ class SongSerializer:
             raise ValueError(format)
 ```
 
-Dans cette exemple utilisant le code Python nous avons une classe d'objet simple représentant une Song et nous avons
+Dans cette exemple utilisant le langage Python nous avons une classe d'objet simple représentant une Song et nous avons
 ensuite un SongSerializer qui contient la méthode `serialize(self, song, format)`. Les différentes implémentations nécessaires
 afin d'obtenir la sérialisation des objets se trouvent dans la même méthode et est dispatchée par un if else.
 
